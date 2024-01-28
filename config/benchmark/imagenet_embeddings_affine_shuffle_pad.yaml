@@ -1,0 +1,7 @@
+defaults:
+  - _self_
+  - imagenet_embeddings
+  - embeddings/transform:
+    - affine_shuffle_pad
+
+name: imagenet_embeddings_affine_shuffle_pad

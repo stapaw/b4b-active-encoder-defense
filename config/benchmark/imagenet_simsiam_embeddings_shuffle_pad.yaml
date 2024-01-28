@@ -1,0 +1,7 @@
+defaults:
+  - _self_
+  - imagenet_simsiam_embeddings
+  - embeddings/transform:
+    - shuffle_pad
+
+name: imagenet_simsiam_embeddings_shuffle_pad

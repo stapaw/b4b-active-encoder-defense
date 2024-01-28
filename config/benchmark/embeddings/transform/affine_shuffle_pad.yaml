@@ -1,0 +1,5 @@
+name: affine_shuffle_pad
+translation: True
+scale: True
+base_dim: 1536
+pad_dim: 1536

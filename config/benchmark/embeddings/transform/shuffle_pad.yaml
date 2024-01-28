@@ -1,0 +1,3 @@
+name: shuffle_pad
+base_dim: 1536
+pad_dim: 1536

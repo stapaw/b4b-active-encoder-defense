@@ -1,0 +1,7 @@
+defaults:
+  - _self_
+  - fmnist_embeddings
+  - embeddings/transform:
+    - binary
+
+name: fmnist_embeddings_binary

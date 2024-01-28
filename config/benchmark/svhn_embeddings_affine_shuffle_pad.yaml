@@ -1,0 +1,7 @@
+defaults:
+  - _self_
+  - svhn_embeddings
+  - embeddings/transform:
+    - affine_shuffle_pad
+
+name: svhn_embeddings_affine_shuffle_pad

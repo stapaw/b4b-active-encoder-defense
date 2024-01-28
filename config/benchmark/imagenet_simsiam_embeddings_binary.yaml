@@ -1,0 +1,7 @@
+defaults:
+  - _self_
+  - imagenet_simsiam_embeddings
+  - embeddings/transform:
+    - binary
+
+name: imagenet_simsiam_embeddings_binary

@@ -1,0 +1,19 @@
+defaults:
+  - _self_
+  - embeddings/transform:
+    - affine
+
+name: cifar10_embeddings
+embeddings:
+  train_path: ./src/data/embeddings/cifar10_emb_train_dataset.pt
+  test_path: ./src/data/embeddings/cifar10_emb_test_dataset.pt
+  class_number: 10
+hparams:
+  train_epochs_reference_classifier: 1
+  train_epochs_mapper: 1
+#    train_mb_size: 64
+#    eval_mb_size: 64
+  lr_reference_classifier: 0.00001
+#    gamma: float
+  lr_mapper: 0.00001
+subsets: [10, 50, 100, 500, 1000, 2000, 3000, 4000, 5000, 6000, 7000, 10000, 50000]

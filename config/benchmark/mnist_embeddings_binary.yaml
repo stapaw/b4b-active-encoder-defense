@@ -1,0 +1,7 @@
+defaults:
+  - _self_
+  - mnist_embeddings
+  - embeddings/transform:
+    - binary
+
+name: mnist_embeddings_binary

@@ -1,0 +1,4 @@
+name: binary
+base_dim: 1536
+binary_relative_dim: 2
+debinarize: False

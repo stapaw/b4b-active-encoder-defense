@@ -1,0 +1,22 @@
+defaults:
+ - _self_
+ - benchmark:
+   - imagenet_noised_simsiam_embeddings
+
+#  model:
+#    load_path: pytorch/vision:v0.13.1
+#    output_dim: 512
+
+wandb:
+  enable: False
+  entity: stapaw
+  project: encoder-defense
+  tags: null
+  name: null
+
+
+output_dir: reference_model_output
+save_model: false
+seed: 0
+device: cuda
+device_id: 1

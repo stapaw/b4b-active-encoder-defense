@@ -1,0 +1,7 @@
+defaults:
+  - _self_
+  - cifar10_simsiam_embeddings
+  - embeddings/transform:
+    - binary
+
+name: cifar10_simsiam_embeddings_binary

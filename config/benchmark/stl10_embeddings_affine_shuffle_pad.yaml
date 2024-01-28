@@ -1,0 +1,7 @@
+defaults:
+  - _self_
+  - stl10_embeddings
+  - embeddings/transform:
+    - affine_shuffle_pad
+
+name: stl10_embeddings_affine_shuffle_pad

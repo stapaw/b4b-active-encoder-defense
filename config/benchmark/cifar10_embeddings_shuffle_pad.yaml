@@ -1,0 +1,7 @@
+defaults:
+  - _self_
+  - cifar10_embeddings
+  - embeddings/transform:
+    - shuffle_pad
+
+name: cifar10_embeddings_shuffle_pad

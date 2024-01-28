@@ -1,0 +1,19 @@
+defaults:
+  - _self_
+  - embeddings/transform:
+    - affine
+
+name: fmnist_embeddings
+embeddings:
+  train_path: ./src/data/embeddings/fmnist_emb_simsiam_train_dataset_noised.pt
+  test_path: ./src/data/embeddings/fmnist_emb_simsiam_test_dataset.pt
+  class_number: 10
+hparams:
+  train_epochs_reference_classifier: 50
+  train_epochs_mapper: 50
+#    train_mb_size: 64
+#    eval_mb_size: 64
+  lr_reference_classifier: 0.001
+#    gamma: float
+  lr_mapper: 0.00001
+subsets: [100, 500, 1000, 2000, 3000, 4000, 5000, 10000, 20000, 30000, 40000, 50000]

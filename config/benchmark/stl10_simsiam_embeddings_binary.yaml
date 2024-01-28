@@ -1,0 +1,7 @@
+defaults:
+  - _self_
+  - stl10_simsiam_embeddings
+  - embeddings/transform:
+    - binary
+
+name: stl10_simsiam_embeddings_binary

@@ -1,0 +1,7 @@
+defaults:
+  - _self_
+  - svhn_embeddings
+  - embeddings/transform:
+    - binary
+
+name: svhn_embeddings_binary

@@ -1,0 +1,19 @@
+defaults:
+  - _self_
+  - embeddings/transform:
+    - affine
+
+name: cifar10_embeddings
+embeddings:
+  train_path: ./src/data/embeddings/cifar10_emb_simsiam_train_dataset_noised.pt
+  test_path: ./src/data/embeddings/cifar10_emb_simsiam_test_dataset.pt
+  class_number: 10
+hparams:
+  train_epochs_reference_classifier: 50
+  train_epochs_mapper: 50
+#    train_mb_size: 64
+#    eval_mb_size: 64
+  lr_reference_classifier: 0.0001 # 0.01 for reference model on original # 0.00001 gives 90 acc for reference model on 50 epochs with affine
+#    gamma: floats
+  lr_mapper: 0.00001
+subsets: [10, 50, 100, 500, 1000, 2000, 3000, 4000, 5000, 10000, 20000, 30000, 40000, 50000]

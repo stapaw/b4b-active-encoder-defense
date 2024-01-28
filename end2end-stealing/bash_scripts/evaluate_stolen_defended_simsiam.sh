@@ -1,0 +1,20 @@
+python evaluate_stolen_model.py simsiam \
+--data cifar10 \
+--datasetsteal imagenet \
+--lam 0.0000001 \
+--alpha 1 \
+--beta 80 \
+--num_queries 50000 \
+--n_sybils 1 \
+--usedefence 'True' \
+--world-size -1 \
+--rank 0  \
+--data /home/datasets/imagenet \
+--batch-size 256 \
+--lr 0.1 \
+--losstype 'infonce' \
+--datasetsteal 'imagenet' \
+--workers 2  \
+--epochs 1 \
+--gpu 3 \
+--modeltype "stolen" 

@@ -1,0 +1,7 @@
+defaults:
+  - _self_
+  - fmnist_simsiam_embeddings
+  - embeddings/transform:
+    - binary
+
+name: fmnist_simsiam_embeddings_binary
