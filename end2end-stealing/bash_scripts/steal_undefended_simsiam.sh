@@ -7,7 +7,7 @@ python steal_model.py simsiam  \
 --world-size -1 \
 --rank 0  \
 --data /home/datasets/imagenet \
---batch-size 25 \
+--batch-size 256 \
 --lr 0.1 \
 --losstype 'infonce' \
 --datasetsteal 'imagenet' \
