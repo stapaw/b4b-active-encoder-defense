@@ -18,7 +18,7 @@ export PYTHONPATH=${PYTHONPATH}:./src
 ```
 * Download SimSiam ResNet50 checkpoint pretrained on ImageNet from https://dl.fbaipublicfiles.com/simsiam/models/100ep/pretrain/checkpoint_0099.pth.tar and place in ./end2end_stealing/pretrained_weights
 * Download DINO VitS16 pretrained on ImageNet from https://dl.fbaipublicfiles.com/dino/dino_deitsmall16_pretrain/dino_deitsmall16_pretrain_full_checkpoint.pth and place in ./end2end_stealing/pretrained_weights
-* Download a subset of ImagNet1k with 100 examples per class in the train set from https://drive.google.com/file/d/1bJ_LmzUR-CsrWpVORoWQ0NWU46EpBhWT/view?usp=sharing
+* Download a subset of ImagNet1k with 100 examples per class in the train set from [https://drive.google.com/file/d/1bJ_LmzUR-CsrWpVORoWQ0NWU46EpBhWT/view?usp=sharing](https://drive.google.com/drive/folders/1jM3wDlQdLPuJMZf37MQxYTfSBF3szBqs?usp=sharing)
 
 ## Running end2end experiments
 
